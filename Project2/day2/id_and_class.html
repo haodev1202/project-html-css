@@ -20,8 +20,21 @@
         CSS selector là cách chúng ta sử dụng để chọn ra các phần tử (elements)
         mà chúng ta muốn "style" cho chúng 
         - Có 2 selectors thân thuộc là id và class
+        * tất cả các thẻ
+        > thẻ con trực tiếp 
+        + liền kề sau thẻ 
+        ~ tất cả thẻ đứng sau
 
-    -->
+
+        Độ ưu tiên trong CSS
+        internal - external : Như nhau thằng nào được viết sau sẽ được ưu tiên
+        inline
+        id
+        class
+        tag
+        equal specificity? Kiểu là gọi lại chính nó một lần nữa Ông nào mới hơn lại được ưu tiên
+        Universal selector and inherited? Chung ví dụ *
+        -->
     <div>
         <h1 id="first-heading">Css selectors?</h1>
         <h1 class="second-heading">Css selectors?</h1>

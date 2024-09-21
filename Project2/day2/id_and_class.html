@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
         #first-heading {
             color: red;
         }
@@ -27,15 +32,37 @@
 
 
         Độ ưu tiên trong CSS
+        !important : chấp hết
         internal - external : Như nhau thằng nào được viết sau sẽ được ưu tiên
         inline
         id
         class
         tag
         equal specificity? Kiểu là gọi lại chính nó một lần nữa Ông nào mới hơn lại được ưu tiên
-        Universal selector and inherited? Chung ví dụ *
+        Universal selector and inherited? Chung ví dụ * và thừa hưởng 0d
+
+        css variable
+        css units
+        1. absolute units? Tuyệt Đối
+            px : Độ phân giải , điểm ảnh
+            pt
+            cm
+            mm
+            inch
+            pc
+        2. relative units? Tương Đối
+            % : phụ thuộc vào thẻ chứa nó
+            rem : phụ thuộc vào html
+            em : phụ thuộc thẻ gần nhất chứa nó có thuộc tính font size
+            vw : viewport width
+            vh : viewport height
+            vmin
+            vmax
+            ex
+            ch
         -->
     <div>
+        <div class="box"></div>
         <h1 id="first-heading">Css selectors?</h1>
         <h1 class="second-heading">Css selectors?</h1>
         <h1 class="second-heading">Css selectors?</h1>

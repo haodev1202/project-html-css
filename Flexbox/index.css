@@ -1,0 +1,67 @@
+.box-item {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    font-size: 40px;
+    text-align: center;
+
+    /* 
+    main axis
+    cross axis
+
+    main start
+    main end 
+    cross start
+    cross end
+
+    main size
+    cross size
+
+    flexcontainer
+*/
+
+    /* Định nghĩa một flex container */
+    display: flex;
+
+    /* flex-direction định hướng hiển thị của các items */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap kiểm soát việc bọc các items nằm gọn trong container
+        nowrap 
+        wrap
+        wrap-reverse
+    */
+
+    /* flex-flow các viết gắn gọn của flex-direction và flex-wrap */
+
+    /* justify-content dùng để căn chỉnh các items so với chục chính (main axis)
+        flex-start : mặc định sẽ đặt item bắt đầu từ main start
+        flex-end : sẽ đặt item bắt đầu từ main end
+        center : sẽ đặt tất cả items ở giữa chục main axis
+        space-betwwen : chia đều khoảng cách thừa và thêm nó vào giữa các items
+        space-around : chia khoảng cách đầu và cuối. Khoảng cách đầu và cuối sẽ bằng một
+        nửa khoảng các giữa các items
+        space-evenly : chia đều khoảng cách giữa các items
+    */
+
+    /* align-items xác định cách mà các flex-item được đặt trong trục cross axis
+        stretch
+        flex-start
+        flex-end
+        center
+        baseline
+
+        align-content thường sử dụng đi theo flex-wrap
+    */
+}
+
+.box-item:first-child {
+    background-color: yellow;
+}
+
+.box-item:last-child {
+    background-color: blueviolet;
+}

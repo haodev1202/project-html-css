@@ -20,4 +20,8 @@ h3 {
     color: var(--text-color);
 }
 
-
+.box {
+    width: calc(120px + );
+    height: calc(120px * 2);
+    background-color: rgb(173, 29, 29);
+}

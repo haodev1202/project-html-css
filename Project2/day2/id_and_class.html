@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-        }
-        #first-heading {
-            color: red;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            #first-heading {
+                color: red;
+            }
 
-        .second-heading {
-            color: green;
-        }
-    </style>
-</head>
-<body>
-    <!-- Identify
+            .second-heading {
+                color: green;
+            }
+
+            a::after {
+                content: "(" attr(href) ")";
+            }
+
+            .box::after {
+                content: attr(data-title);
+            }
+
+            .box::before {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+
+            .box1 {
+                width: 100%;
+                height: 100vh;
+                background-image: url(https://tree.edu.vn/uploads/blog/2024/07/06/33f43cb8888ee5330ad310bf7141f619212ab148-1720266742.webp);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Identify
         Class 
         CSS selector là cách chúng ta sử dụng để chọn ra các phần tử (elements)
         mà chúng ta muốn "style" cho chúng 
@@ -60,13 +87,43 @@
             vmax
             ex
             ch
+
+            CSS functions
+            var()
+            linear-gradient
+            rgba
+            rgb : không thể tạo ra màu trong suốt
+            calc : tính toán
+            attr : attribute
+
+            pseudo-class : lớp giả
+            :root : tham chiếu tới phần tử gốc của html
+            :hover : kích hoạt khi di chuyển lên 
+            :active : hoạt động khi bấm và giữ chuột
+            :first-child : thằng đầu tiên
+            :last-child : thằng cuối cùng
+
+            Pseudo elements
+            ::before
+            ::after
+            ::first-letter
+            ::first-line
+            ::selection
+
+            background-image
+
         -->
-    <div>
-        <div class="box"></div>
-        <h1 id="first-heading">Css selectors?</h1>
-        <h1 class="second-heading">Css selectors?</h1>
-        <h1 class="second-heading">Css selectors?</h1>
-        <h2 class="second-heading">Css selectors?</h2>
-    </div>
-</body>
+        <div>
+            <div
+                class="box"
+                data-title="Day la mot box"
+            ></div>
+            <h1 id="first-heading">Css selectors?</h1>
+            <h1 class="second-heading">Css selectors?</h1>
+            <h1 class="second-heading">Css selectors?</h1>
+            <h2 class="second-heading">Css selectors?</h2>
+            <a href="http://youtube.com">youtube</a>
+            <div class="box1"></div>
+        </div>
+    </body>
 </html>
